@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="py-4">
+        <h4 class="text-dark text-center w-50  rounded-2 mx-auto py-3 text-capitalize bg-light">guess number between 1-100.</h4>
+        <div class="game-data w-50 bg-light mx-auto mt-5 py-4 px-3 rounded-2">
+            <div class=" d-flex justify-content-around box-form">
+                <div class="form-floating w-75">
+                    <input type="number" class="form-control" id="guessed-val" placeholder="name@example.com">
+                    <label for="guessed-val">Number</label>
+                </div>
+                <button onclick="play()" class="btn text-light text-uppercase" id="guess-btn">guess</button>
+            </div>
+        </div>
+        <div class="w-50 mx-auto mt-4 bg-light rounded-2 px-3 py-4 text-capitalize">
+            <p id="message_1">no. of gussess: 0</p>
+            <p id="message_2">guessed number are: none</p>
+            <p id="message_3"></p>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
